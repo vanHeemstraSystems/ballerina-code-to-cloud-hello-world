@@ -51,6 +51,23 @@ $ cd hello
 $ bal build --cloud=k8s
 ```
 
+A failure shows:
+
+```
+Compiling source
+        cloud_user/hello:0.1.0
+
+Generating executable
+
+Generating artifacts...
+
+        @kubernetes:Service                      - complete 1/1
+        @kubernetes:Deployment                   - complete 1/1
+        @kubernetes:HPA                          - complete 1/1
+error [k8s plugin]: module [cloud_user/hello:0.1.0] unable to build docker image: could not build image: failed to export image: failed to create image: failed to get layer sha256:f8a2f60941a10b096a677e54a1d509601a6ccc6853ba1c63763359cf438ef899: layer does not exist
+        target/bin/hello.jar
+```
+
 More ...
 
 
