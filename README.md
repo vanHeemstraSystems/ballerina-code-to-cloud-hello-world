@@ -3,7 +3,12 @@ ballerina-code-to-cloud-hellow-world
 
 Based on "Hello World Sample" at https://ballerina.io/learn/user-guide/deployment/code-to-cloud/samples/#hello-world-sample
 
-## 100 - Creating the Ballerina Package
+## 100 - Prerequisites
+
+- Ballerina, see https://github.com/vanHeemstraSystems/ballerina-headstart/
+- Docker, see https://github.com/vanHeemstraSystems/docker-quick-start-headstart
+
+## 200 - Creating the Ballerina Package
 
 1. Execute the ```bal new hello``` command to create a new package named ```hello```.
 
@@ -34,7 +39,7 @@ name="hello"
 tag="v0.1.0"
 ```
 
-## 200 - Generating the Artifacts
+## 300 - Generating the Artifacts
 
 Execute the ```bal build --cloud=k8s``` command to build the Ballerina package and you view the output below. The ```--cloud=docker``` option will build only Docker artifacts. Optionally, the build option can be added to the ```Ballerina.toml``` file as below.
 
