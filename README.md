@@ -34,4 +34,23 @@ name="hello"
 tag="v0.1.0"
 ```
 
+## 200 - Generating the Artifacts
+
+Execute the ```bal build --cloud=k8s``` command to build the Ballerina package and you view the output below. The ```--cloud=docker``` option will build only Docker artifacts. Optionally, the build option can be added to the ```Ballerina.toml``` file as below.
+
+```
+[build-options]
+cloud = "k8s"
+```
+containers/sample/hello/Ballerina.toml
+
+Now execute the build command again, but from within the package directory of 'hello':
+
+```
+$ cd hello
+$ bal build --cloud=k8s
+```
+
+More ...
+
 
