@@ -7,7 +7,7 @@ Based on "Hello World Sample" at https://ballerina.io/learn/user-guide/deploymen
 
 1. Execute the ```bal new hello``` command to create a new package named ```hello```.
 
-2. Replace the content of the /hello/main.bal file with the content below.
+2. Replace the content of the ```/hello/main.bal``` file with the content below.
 
 ***Note***: All the other code is not related to Docker or Kubernetes and those are completely focused on the business logic.
 
