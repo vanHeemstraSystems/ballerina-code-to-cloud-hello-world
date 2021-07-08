@@ -24,7 +24,7 @@ service /helloWorld on helloEP {
 }
 ```
 
-3. Create a file named Cloud.toml in the package directory and add the content below.
+3. Create a file named ```Cloud.toml``` in the package directory and add the content below.
 
 ***Cloud.toml***
 ```
