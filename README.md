@@ -13,25 +13,25 @@ Based on "Hello World Sample" at https://ballerina.io/learn/user-guide/deploymen
 
 ***main.bal***
 ```
- import ballerina/http;
+import ballerina/http;
 
- listener http:Listener helloEP = new(9090);
+listener http:Listener helloEP = new(9090);
 
- service /helloWorld on helloEP {
-     resource function get sayHello() returns string {   
-         return "Hello, World from service helloWorld ! ";   
-     }
- }
+service /helloWorld on helloEP {
+  resource function get sayHello() returns string {   
+    return "Hello, World from service helloWorld ! ";   
+  }
+}
 ```
 
 3. Create a file named Cloud.toml in the package directory and add the content below.
 
 ***Cloud.toml***
 ```
- [container.image]
- repository="wso2inc"
- name="hello"
- tag="v0.1.0"
+[container.image]
+repository="wso2inc"
+name="hello"
+tag="v0.1.0"
 ```
 
 
