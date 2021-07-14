@@ -62,7 +62,7 @@ $ cd hello
 $ bal build --cloud=k8s
 ```
 
-If you see below failure, try setting the environment variable ```CI_BUILD=true``` as stated above:
+If you see below ***failure***, try setting the environment variable ```CI_BUILD=true``` before executing the command, as stated above:
 
 ```
 Compiling source
