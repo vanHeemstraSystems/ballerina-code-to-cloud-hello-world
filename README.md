@@ -41,6 +41,12 @@ tag="v0.1.0"
 
 ## 300 - Generating the Artifacts
 
+***WARNING***: For generating Artifacts to succeed on CentOS 7, one has to first set the following environmnet variable:
+
+```
+$ export CI_BUILD=true
+```
+
 Execute the ```bal build --cloud=k8s``` command to build the Ballerina package and you view the output below. The ```--cloud=docker``` option will build only Docker artifacts. Optionally, the build option can be added to the ```Ballerina.toml``` file as below.
 
 ```
