@@ -93,10 +93,13 @@ Generating artifacts...
         @kubernetes:Deployment                   - complete 1/1
         @kubernetes:HPA                          - complete 1/1
         @kubernetes:Docker                       - complete 2/2
+        
         Execute the below command to deploy the Kubernetes artifacts:
         kubectl apply -f /home/cloud_user/git/ballerina-code-to-cloud-hello-world/containers/sample/hello/target/kubernetes/hello
+        
         Execute the below command to access service via NodePort:
         kubectl expose deployment hello-deployment --type=NodePort --name=hello-svc-local
+        
         target/bin/hello.jar        
 ```
 
