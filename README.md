@@ -62,7 +62,7 @@ $ cd hello
 $ bal build --cloud=k8s
 ```
 
-A failure shows:
+If you see below failure, try setting the environment variable ```CI_BUILD=true``` as stated above:
 
 ```
 Compiling source
@@ -79,6 +79,26 @@ error [k8s plugin]: module [cloud_user/hello:0.1.0] unable to build docker image
         target/bin/hello.jar
 ```
 
-More ...
+If successful you'll see after while:
 
+```
+Compiling source
+        cloud_user/hello:0.1.0
+
+Generating executable
+
+Generating artifacts...
+
+        @kubernetes:Service                      - complete 1/1
+        @kubernetes:Deployment                   - complete 1/1
+        @kubernetes:HPA                          - complete 1/1
+        @kubernetes:Docker                       - complete 2/2
+        Execute the below command to deploy the Kubernetes artifacts:
+        kubectl apply -f /home/cloud_user/git/ballerina-code-to-cloud-hello-world/containers/sample/hello/target/kubernetes/hello
+        Execute the below command to access service via NodePort:
+        kubectl expose deployment hello-deployment --type=NodePort --name=hello-svc-local
+        target/bin/hello.jar        
+```
+
+More ...
 
