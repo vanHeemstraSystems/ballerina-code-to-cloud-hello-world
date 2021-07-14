@@ -79,7 +79,7 @@ error [k8s plugin]: module [cloud_user/hello:0.1.0] unable to build docker image
         target/bin/hello.jar
 ```
 
-If successful you'll see after while:
+If successfull, you'll see after while:
 
 ```
 Compiling source
